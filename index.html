@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Online Academy Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 600px;
+            margin: 30px auto;
+            padding: 20px 40px;
+            background-color: rgb(172, 203, 129);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .form-group {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .form-group label {
+            width: 150px;
+            font-weight: bold;
+        }
+        .form-group input, 
+        .form-group textarea, 
+        .form-group select {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group .options {
+            display: flex;
+            gap: 15px;
+        }
+        .form-group .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://saylaniwelfare.com/static/media/logo_saylaniwelfare.22bf709605809177256c.png" alt="Saylani Logo">
+    <h1>Saylani Online Academy</h1>
+    <h2>Student Registration Form</h2>
+
+
+    <div class="container">
+        <form action="from2.html" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div class="form-group">
+                <label for="father_name">Father Name:</label>
+                <input type="text" name="father_name" id="father_name">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="options">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Language:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="language" value="urdu"> Urdu</label>
+                    <label><input type="checkbox" name="language" value="english"> English</label>
+                    <label><input type="checkbox" name="language" value="arabic"> Arabic</label>
+                    <label><input type="checkbox" name="language" value="chinese"> Chinese</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">DOB:</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" name="mobile" id="mobile">
+            </div>
+
+            <div class="form-group">
+                <label for="city">City:</label>
+                <select name="city" id="city">
+                    <option>Select Your City</option>
+                    <option>Jamshoro</option>
+                    <option>Karachi</option>
+                    <option>Lahore</option>
+                    <option>Islamabad</option>
+                    <option>Hyderabad</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <select name="hobbies" id="hobbies" multiple>
+                    <option>Cricket</option>
+                    <option>Football</option>
+                    <option>Hockey</option>
+                    <option>Tennis</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="picture">Picture Upload:</label>
+                <input type="file" name="picture" id="picture">
+            </div>
+
+            <input type="submit" value="Submit Form">
+        </form>
+    </div>
+
+</body>
+</html>
